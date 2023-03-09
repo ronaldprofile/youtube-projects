@@ -9,4 +9,4 @@
 
 ## Sobre
 
-Nesso repositório você vai encontrar vários projetos desenvolvidos através de conteúdos no youtube.
+Nesse repositório você vai encontrar vários projetos desenvolvidos através de conteúdos no youtube.
