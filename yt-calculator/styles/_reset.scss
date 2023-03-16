@@ -1,0 +1,22 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: $body-background;
+}
+
+*,
+button,
+input {
+  font: 400 1rem $font-body;
+}
+
+button {
+  cursor: pointer;
+}

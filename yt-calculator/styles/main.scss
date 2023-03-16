@@ -1,0 +1,119 @@
+@import "./reset";
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  max-width: 356px;
+  width: 100%;
+  padding: 3.375rem 2rem 2rem;
+  background: #2d2a37;
+
+  border-radius: 48px;
+}
+
+.calculator-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .calculation {
+    align-self: flex-end;
+
+    span {
+      font-size: 1.25rem;
+      color: #6b6b6b;
+    }
+  }
+
+  .result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .signal-equals {
+      i {
+        font-size: 1.25rem;
+        color: #6b6b6b;
+        transition: all 0.2s;
+      }
+
+      &.hide {
+        i {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+
+    .result-preview {
+      font-size: 2.25rem;
+      color: #ebebeb;
+    }
+  }
+}
+
+.calculator-keyboard {
+  margin-top: 1.625rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  .line {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .keyboard-button {
+    width: 4rem;
+    height: 4rem;
+
+    font-size: 1.5rem;
+    background: $keyboard-button-background;
+    color: #ebebeb;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    box-shadow: $keyboard-button-shadow;
+    border-radius: 9999px;
+    transition: all 0.2s;
+
+    i {
+      font-size: inherit;
+    }
+
+    &.signal {
+      background: $keyboard-button-signal-background;
+    }
+
+    &.signal:hover {
+      background: $keyboard-button-equal-background;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.4;
+    }
+
+    &:hover:not(.signal, :disabled) {
+      background: #202024;
+    }
+  }
+
+  #clear-entry {
+    text-transform: uppercase;
+    color: #975dfa;
+  }
+
+  #button-equal {
+    background: $keyboard-button-equal-background;
+  }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <title>Youtube Project - Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="calculator">
+        <div class="calculator-preview">
+          <div class="calculation">
+            <span class="previous-value"></span>
+            <span class="signal-operator"></span>
+            <span class="next-value"></span>
+          </div>
+
+          <div class="result">
+            <span class="signal-equals hide">
+              <i class="ph-light ph-equals"></i>
+            </span>
+            <span class="result-preview"></span>
+          </div>
+        </div>
+
+        <div class="calculator-keyboard">
+          <div class="line">
+            <button class="keyboard-button" id="clear-entry">ce</button>
+            <button class="keyboard-button" disabled>c</button>
+            <button class="keyboard-button button-signal-operator" disabled>
+              %
+            </button>
+            <button class="keyboard-button signal button-signal-operator">
+              /
+            </button>
+          </div>
+
+          <div class="line">
+            <button id="button-number" class="keyboard-button">7</button>
+            <button id="button-number" class="keyboard-button">8</button>
+            <button id="button-number" class="keyboard-button">9</button>
+            <button class="keyboard-button signal button-signal-operator">
+              x
+            </button>
+          </div>
+
+          <div class="line">
+            <button id="button-number" class="keyboard-button">4</button>
+            <button id="button-number" class="keyboard-button">5</button>
+            <button id="button-number" class="keyboard-button">6</button>
+            <button class="keyboard-button signal button-signal-operator">
+              -
+            </button>
+          </div>
+
+          <div class="line">
+            <button id="button-number" class="keyboard-button">1</button>
+            <button id="button-number" class="keyboard-button">2</button>
+            <button id="button-number" class="keyboard-button">3</button>
+            <button class="keyboard-button signal button-signal-operator">
+              +
+            </button>
+          </div>
+
+          <div class="line">
+            <button class="keyboard-button" disabled>
+              <i class="ph-light ph-plus-minus"></i>
+            </button>
+            <button id="button-number" class="keyboard-button">0</button>
+            <button class="keyboard-button" disabled>,</button>
+            <button class="keyboard-button" id="button-equal">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/main.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #202024;
+}
+
+*,
+button,
+input {
+  font: 400 1rem "Rubik", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  max-width: 356px;
+  width: 100%;
+  padding: 3.375rem 2rem 2rem;
+  background: #2d2a37;
+  border-radius: 48px;
+}
+
+.calculator-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.calculator-preview .calculation {
+  align-self: flex-end;
+}
+.calculator-preview .calculation span {
+  font-size: 1.25rem;
+  color: #6b6b6b;
+}
+.calculator-preview .result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.calculator-preview .result .signal-equals i {
+  font-size: 1.25rem;
+  color: #6b6b6b;
+  transition: all 0.2s;
+}
+.calculator-preview .result .signal-equals.hide i {
+  opacity: 0;
+  visibility: hidden;
+}
+.calculator-preview .result .result-preview {
+  font-size: 2.25rem;
+  color: #ebebeb;
+}
+
+.calculator-keyboard {
+  margin-top: 1.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.calculator-keyboard .line {
+  display: flex;
+  gap: 0.75rem;
+}
+.calculator-keyboard .keyboard-button {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #2d2a37;
+  color: #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.06);
+  border-radius: 9999px;
+  transition: all 0.2s;
+}
+.calculator-keyboard .keyboard-button i {
+  font-size: inherit;
+}
+.calculator-keyboard .keyboard-button.signal {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0.01%, rgba(255, 255, 255, 0.05) 100%), #462878;
+}
+.calculator-keyboard .keyboard-button.signal:hover {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%), #7f45e2;
+}
+.calculator-keyboard .keyboard-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+.calculator-keyboard .keyboard-button:hover:not(.signal, :disabled) {
+  background: #202024;
+}
+.calculator-keyboard #clear-entry {
+  text-transform: uppercase;
+  color: #975dfa;
+}
+.calculator-keyboard #button-equal {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%), #7f45e2;
+}/*# sourceMappingURL=main.css.map */
