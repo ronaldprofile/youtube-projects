@@ -12,6 +12,13 @@ import {
 
 import { handleMathOperator } from "./calculator/index.mjs";
 
+function verifyIfExistsSomethingTyped() {
+  const valuePrevious = Number(keyValuePrevious.textContent);
+
+  const someNumberWasEntered = valuePrevious;
+  return someNumberWasEntered ? true : false;
+}
+
 function handleClickButtonNumber(keyValue) {
   const signalOperatorExists = signalOperatorElement.childNodes.length;
 
@@ -34,13 +41,28 @@ buttonsNumbers.forEach(button => {
 });
 
 buttonsSignalOperators.forEach(button => {
-  const signalOperator = button.textContent;
-  button.addEventListener("click", () =>
-    handleClickButtonSignalOperator(signalOperator)
-  );
+  button.addEventListener("click", () => {
+    const someNumberWasEntered = verifyIfExistsSomethingTyped();
+
+    if (!someNumberWasEntered) {
+      alert("Comece digitando algum número");
+      return;
+    }
+
+    const signalOperator = button.textContent;
+
+    handleClickButtonSignalOperator(signalOperator);
+  });
 });
 
 buttonEqual.addEventListener("click", () => {
+  const someNumberWasEntered = verifyIfExistsSomethingTyped();
+
+  if (!someNumberWasEntered) {
+    alert("Digite algo na calculadora");
+    return;
+  }
+
   const valuePrevious = Number(keyValuePrevious.textContent);
   const valueNext = Number(keyValueNext.textContent);
 
