@@ -1,8 +1,6 @@
-
-#  Youtube Projects
+# Youtube Projects
 
 Nesso repositório você vai encontrar vários projetos desenvolvidos através de conteúdos no youtube.
-
 
 ## Projeto 01 - Todo List
 
@@ -19,3 +17,22 @@ Durante o desenvolvimento você pode aprender a manipular a DOM, trabalhar com a
 Para aprender a desenvolver esse projeto indico o vídeo do canal [dicasparadevs](https://www.youtube.com/watch?v=0bNeKAzVvlE)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://youtube-projects-todo-list.vercel.app)
+
+## Projeto 02 - Calculator
+
+<img src="blob:https://vercel.com/c8943b66-59ec-429d-86fb-f3f2bbed730d" />
+
+Esse projeto foi desenvolvido usando:
+
+- HTML
+- CSS
+- Javascript
+- Phosphor icon CDN
+
+Durante o desenvolvimento você pode aprender a manipular a DOM e trabalhar com operações matemáticas.
+
+O layout foi baseado em um projeto da Rocketseat chamado _BoraCodar_, você pode acessar o figma por [aqui](<https://www.figma.com/file/S04oYiyzJ5vdRatS5VTaMc/%23boraCodar---Desafio-5-(Community)?node-id=0%3A1&t=Ti9Z97EZl6dUx6qd-1>)
+
+Para aprender a desenvolver esse projeto indico o vídeo do canal [dicasparadevs](https://youtu.be/93wPYo1pjic)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://youtube-projects-calculator.vercel.app/)
