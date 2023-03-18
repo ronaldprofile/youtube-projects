@@ -20,7 +20,7 @@ Para aprender a desenvolver esse projeto indico o vídeo do canal [dicasparadevs
 
 ## Projeto 02 - Calculator
 
-<img src="blob:https://vercel.com/c8943b66-59ec-429d-86fb-f3f2bbed730d" />
+<img src="./.github/assets/screenshots/screenshot-calculator.png" />
 
 Esse projeto foi desenvolvido usando:
 
